@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "gesture-app",
+    "slug": "gesture-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#fff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.prxdeesh.gestureapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "46c29c27-6df7-42e4-9799-85383c2a09c3"
+      }
+    },
+    "plugins": [
+      [
+        "@react-native-voice/voice",
+        {
+          "microphonePermission": "granted",
+          "speechRecognitionPermission": "granted"
+        }
+      ],
+      [
+        "react-native-auth0",
+        {
+          "domain": "dev-wez5cjjfvcuo77js.us.auth0.com"
+        }
+      ]
+    ]
+  }
+}
